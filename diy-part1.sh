@@ -16,6 +16,4 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-#sed -i '28s/3568/3588/' package/boot/arm-trusted-firmware-rockchip-vendor/pack-firmware.sh
-git reset --hard 97c30dc6200a1acd28a16e0f1651809afb25c72f
 echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default

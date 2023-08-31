@@ -19,7 +19,7 @@ on:
         required: false
         default: 'false'
       make:
-        description: 'make type(0:use make -j$(nproc), 1:use make -j1, other:use make -j1 V=s)'
+        description: 'make type(0:use make -j$(nproc),\n 1:use make -j1, other:use make -j1 V=s)'
         required: false
         default: '0'
 

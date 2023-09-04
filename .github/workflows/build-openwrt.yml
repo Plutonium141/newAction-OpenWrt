@@ -130,10 +130,10 @@ jobs:
         echo '${{ github.event.inputs.make }}'
         echo 'make -j$(nproc)'
         echo '------'
-        if [ "${{ github.event.inputs.make }}" = 'make -j$(nproc)' ]; then
+        if [ '${{ github.event.inputs.make }}' = 'make -j$(nproc)' ]; then
           echo "use make -j$(nproc) compile(default)"
           make -j$(nproc)
-        elif [ "${{ github.event.inputs.make }}" = 'make -j1' ]; then
+        elif [ '${{ github.event.inputs.make }}' = 'make -j1' ]; then
           echo "use make -j1 compile"
           make -j1
         else

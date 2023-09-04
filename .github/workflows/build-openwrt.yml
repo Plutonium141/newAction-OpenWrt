@@ -127,6 +127,9 @@ jobs:
       run: |
         cd openwrt
         echo "${{ github.event.inputs.make }}"
+        echo '${{ github.event.inputs.make }}'
+        echo 'make -j$(nproc)'
+        echo '------'
         if [ "${{ github.event.inputs.make }}" = 'make -j$(nproc)' ]; then
           echo "use make -j$(nproc) compile(default)"
           make -j$(nproc)
